@@ -1,6 +1,8 @@
 **SORU**
 
-Önceden değerleri girilen iki boyutlu matristeki değerler sadece 1 ve 0’lardan oluşmaktadır.1 yolları;0 ise gidilemez yerleri temsil eder.Bu matriste ki uygun yoların koordinatlarını ekrana yazdıran programın akış şeması ve java kodu.
+Önceden değerleri girilen iki boyutlu matristeki değerler sadece 1 ve 0’lardan oluşmaktadır.
+1 yolları;0 ise gidilemez yerleri temsil eder.Bu matriste ki uygun yoların koordinatlarını 
+ekrana yazdıran programın akış şeması ve java kodu.
 
 **Java Kodu**
 
