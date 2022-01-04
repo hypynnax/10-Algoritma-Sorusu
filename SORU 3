@@ -1,6 +1,10 @@
 **SORU**
 
-Kullanıcının klavyeden önce “Lütfen boyunuzu metre cinsinden giriniz” sonra “Lütfen kilonuzu kg cinsinden giriniz şeklinde değerler girilmesi istenmektedir.VKI = kilo/boy^2 ile hesaplanır.Eğer VKI 18,5’dan küçük ise “Zayıf” , VKI 18,5 ve 25 arası ise ”Normal Kilolu” , VKI 25 ve 30 arası ise “Fazla Kilolu” , VKI 30 ve 35 arası ise “Tip 1 Obez” , VKI 35 ve 40 arası ise “Tip 2 Obez” , VKI 40 ve 50 arası ise “Morbid Obez(İleri derecede obez)” , VKI 50 ve 60 arası ise “Süper Obez” , VKI 60 ve 75 arası ise “Süper Süper Obez” yazan programın akış şeması ve java kodu.
+Kullanıcının klavyeden önce “Lütfen boyunuzu metre cinsinden giriniz” sonra “Lütfen kilonuzu kg cinsinden giriniz
+şeklinde değerler girilmesi istenmektedir.VKI = kilo/boy^2 ile hesaplanır.Eğer VKI 18,5’dan küçük ise “Zayıf” , 
+VKI 18,5 ve 25 arası ise ”Normal Kilolu” , VKI 25 ve 30 arası ise “Fazla Kilolu” , VKI 30 ve 35 arası ise “Tip 1 Obez” , 
+VKI 35 ve 40 arası ise “Tip 2 Obez” , VKI 40 ve 50 arası ise “Morbid Obez(İleri derecede obez)” , VKI 50 ve 60 arası 
+ise “Süper Obez” , VKI 60 ve 75 arası ise “Süper Süper Obez” yazan programın akış şeması ve java kodu.
 
 **Java Kodu**
 
