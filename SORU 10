@@ -1,0 +1,38 @@
+**SORU**
+
+Kullanıcıdan aldığı ad ve soyadı parametre olarak alan ve adı ve soyadı 12 ye * ve + ile tamamlayıp kare ve u şeklinde ekrana yazan programın akış şeması ve java kodu.
+
+**Java Kodu**
+
+package havali.isim;
+import java.util.Scanner;
+public class HavaliIsim {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Lütfen adınızı ve soyadınızı giriniz:");
+        String firstName = reader.next();
+        String lastName = reader.next();
+        
+        //Ad 12 den küçük ise uzunluğu 12 olana dek * eklemesi için gereken döngü
+        for (int i=firstName.length();i<12;i++){
+            firstName += "*";
+        }
+
+        //Soyad 12 den küçük ise uzunluğu 12 olana dek + eklemesi için gereken döngü
+        for (int i=lastName.length();i<12;i++){
+            lastName += "+";
+				}
+
+        //Adı kare şeklinde yazmak için gerekli kodlar
+        System.out.println(firstName.substring(0, 4)+" ");
+        System.out.println(firstName.charAt(4)+"  "+firstName.charAt(11)+" ");
+        System.out.println(firstName.charAt(5)+"  "+firstName.charAt(10)+" ");
+        System.out.println(firstName.substring(6, 10)+" ");
+        
+        //Soyadı U şeklinde yazmak için gerekli kodlar
+        System.out.println(lastName.charAt(0)+"    "+lastName.charAt(11));
+        System.out.println(lastName.charAt(1)+"    "+lastName.charAt(10));
+        System.out.println(lastName.charAt(2)+"    "+lastName.charAt(9));
+        System.out.println(lastName.substring(3, 9));
+    }
+}
