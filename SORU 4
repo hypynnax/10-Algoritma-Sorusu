@@ -1,0 +1,31 @@
+**SORU**
+
+Kullanıcının klavyeden  sınav süresi girilmesi istenir.Eğer hatalı bir giriş yapılmış ise “Lütfen bir gün içinde olucak şekilde dakika cinsinden sınav süresini giriniz”uyarısı kullanıcıya gösterilecektir.Eğer kullanıcı doğru bir giriş yapmış ise ekrana “Sınavın başlangıç saati 8.30'dur X dk sonra saat YY.ZZ olacaktır” şeklinde bir çıktı üretecek programın akış şeması ve java kodu.
+
+**Java Kodu**
+
+package x.dakika.sonra.saat.kac;
+import java.util.Scanner;
+public class XDakikaSonraSaatKac {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Lütfen sınav süresini giriniz:");
+        int sure = reader.nextInt();
+        while (sure <0 || sure >1440){
+            System.out.println("Lütfen bir gün içinde olucak şekilde dakika cinsinden sınav süresini giriniz:");
+            sure = reader.nextInt();
+        }
+        int saat,dakka,baslangicsaati = 13,baslangicdakkasi = 30;
+        String bitis;
+        saat = (sure/60)+baslangicsaati;
+        dakka = (sure%60)+baslangicdakkasi;
+        bitis = saat+":"+dakka;
+        if (dakka>=60) {
+            saat += dakka/60;
+            dakka = dakka%60;
+            bitis = saat+":"+dakka;
+        }
+        System.out.printf("Sınavın başlangıç saati %d:%d'dur %d dk sonra saat %s olacaktır.",baslangıcsaati,baslangıcdakkası,süre,bitis);
+    }
+}
