@@ -1,0 +1,38 @@
+**SORU**
+
+Kullanıcıdan oynamak istediği oyun alanının büyüklüğünü (satır ve sütün boyutları) girmesi istensin.Kullanıcı tarafından girilen büyüklükte bir matris rastgele oluşturulsun.Oluşturulan matriste sadece 0 ve 1 değerleri vardır.0 değeri temiz ; 1 değerleri mayınlı bölgeleri göstersin.Oyunun başında kullanıcının puanı 0 ‘dır ve her doğru cevabında 10 puan kazanır taki mayınlı bloğu seçip ölene kadar ondan sonra puanı ile birlikte “Game Over” yazısı çıkan programın akış şeması ve java kodu.
+
+**Java Kodu**
+
+package mayın.tarlası;
+import java.util.Scanner;
+public class MayınTarlası {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Lütfen oyun alanının enini giriniz:");
+        int en = reader.nextInt();
+        System.out.print("Lütfen oyun alanının boyunu giriniz:");
+        int boy = reader.nextInt();
+        int puan = 0;
+        int [][] tarla = new int [boy][en];
+        for (int i=0;i<boy;i++){
+            for (int j=0;j<en;j++){
+                int bomba = (int)(Math.random()*2);
+                tarla [i][j] = bomba;
+            }
+        }
+        System.out.print("Seçmek istediğiniz yerin koordinatlarını yazınız:");
+        for (;;) {
+            int satir = reader.nextInt();
+            int sutun = reader.nextInt();
+            if (tarla[satir][sutun] == 1){
+                System.out.println("Game Over!!\nPuanınız : "+puan);
+                break;
+            }
+            puan += 10;
+            System.out.println("HALA HAYATTASIN...Devam\n10 puan kazanıldı");
+            System.out.print("Hadi bir koordinat daha yaz:");
+        }
+    }
+}
+```
