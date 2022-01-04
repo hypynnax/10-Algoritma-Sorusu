@@ -1,6 +1,9 @@
 **SORU**
 
-Kullanıcının klavyeden  sınav süresi girilmesi istenir.Eğer hatalı bir giriş yapılmış ise “Lütfen bir gün içinde olucak şekilde dakika cinsinden sınav süresini giriniz”uyarısı kullanıcıya gösterilecektir.Eğer kullanıcı doğru bir giriş yapmış ise ekrana “Sınavın başlangıç saati 8.30'dur X dk sonra saat YY.ZZ olacaktır” şeklinde bir çıktı üretecek programın akış şeması ve java kodu.
+Kullanıcının klavyeden  sınav süresi girilmesi istenir.Eğer hatalı bir giriş yapılmış ise “Lütfen bir gün içinde olucak
+şekilde dakika cinsinden sınav süresini giriniz”uyarısı kullanıcıya gösterilecektir.Eğer kullanıcı doğru bir giriş
+yapmış ise ekrana “Sınavın başlangıç saati 8.30'dur X dk sonra saat YY.ZZ olacaktır” şeklinde bir çıktı üretecek programın 
+akış şeması ve java kodu.
 
 **Java Kodu**
 
