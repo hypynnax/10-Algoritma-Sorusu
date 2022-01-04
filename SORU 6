@@ -1,8 +1,10 @@
 **SORU**
 
-Kullanıcıdan bilgisayarın 0 ile 100 arasında rastgele tuttuğu sayıyı sıcak / soğuk oyunu ile bulmasını isteyen programın akış şeması ve java kodu.
+Kullanıcıdan bilgisayarın 0 ile 100 arasında rastgele tuttuğu sayıyı sıcak / soğuk 
+oyunu ile bulmasını isteyen programın akış şeması ve java kodu.
 
 **Java Kodu**
+
 package sayitahmini;
 import java.util.Scanner;
 public class SayiTahmini{
