@@ -1,0 +1,36 @@
+**SORU**
+
+Kullanıcıdan bilgisayarın 0 ile 100 arasında rastgele tuttuğu sayıyı sıcak / soğuk oyunu ile bulmasını isteyen programın akış şeması ve java kodu.
+
+**Java Kodu**
+package sayitahmini;
+import java.util.Scanner;
+public class SayiTahmini{
+	public static void main(String [] args){
+		int number = (int)(Math.random()*101);
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Tahmininiz:");
+		int answer = reader.nextInt();
+		do{
+			if (answer >= 0 && answer < number-30 || answer > number+30 && answer <= 100){
+				System.out.println("Dondunuz");
+				answer = reader.nextInt();
+			}else if (answer >= number-30 && answer < number-20 || answer > number+20 && answer <= 30){
+				System.out.println("Cok Soguk");
+				answer = reader.nextInt();
+			}else if (answer >= number-20 && answer < number-10 || answer > number+10 && answer <= 20){
+				System.out.println("Soguk");
+				answer = reader.nextInt();
+			}else if (answer >= number-10 && answer < number-5 || answer > number+5 && answer <= 10){
+				System.out.println("Sicak");
+				answer = reader.nextInt();
+			}else if (answer >= number-5 && answer < number || answer > number && answer <= 5){
+				System.out.println("Cok Sicak");
+				answer = reader.nextInt();
+			}else if (answer == number){
+				break;
+			}
+		}while(answer != number);
+		System.out.println("TEBRIKLER BILDINIZ");
+	}
+}
