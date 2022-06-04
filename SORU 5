@@ -5,31 +5,33 @@ Kullanıcıdan alınan sayı değeri uzunluğunda rastgele şifre oluşturan pro
 **Java Kodu**
 
 package sifreolusturma;
+
 import java.util.Scanner;
-public class SifreOlusturma{
-	public static void main (String [] args){
-		Scanner reader = new Scanner(System.in);
-		System.out.print("Lutfen sifrenizin basamak degerini girin = ");
-		int uzunluk = reader.nextInt();
-		String [] karakterler = {"Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L",
-		"Z","X","C","V","B","N","M","q","w","e","r","t","y","u","o","p","a","s","d","f","g","h","j","k","l",
-		"i","z","x","c","v","b","n","m","1","2","3","4","5","6","7","8","9","0","₺","€","$","£",">","<","$",
-		"½","[","]","(",")","=","?","!","/","*","-","+",",",":",".",";","@","ß","~","%"};
-		String sifre = "";
-		for (int i=0;i<uzunluk;i++){
-			int sayi = (int)(Math.random()*90);
-			sifre += karakterler[sayi];
-		}
-		System.out.println("-----Lutfen Bekleyiniz-----");
-		for (int j=3;j>=1;j--){
-			System.out.println("Sifreniz olusturuluyor...."+j);
-			try{
-				Thread.sleep(1000);
-			}
-			catch(InterruptedException  e){    
+
+public class SifreOlusturma {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Lutfen sifrenizin basamak degerini girin = ");
+        int uzunluk = reader.nextInt();
+        String[] karakterler = {"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L",
+            "Z", "X", "C", "V", "B", "N", "M", "q", "w", "e", "r", "t", "y", "u", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l",
+            "i", "z", "x", "c", "v", "b", "n", "m", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "₺", "€", "$", "£", ">", "<", "$",
+            "½", "[", "]", "(", ")", "=", "?", "!", "/", "*", "-", "+", ",", ":", ".", ";", "@", "ß", "~", "%"};
+        String sifre = "";
+        for (int i = 0; i < uzunluk; i++) {
+            int sayi = (int) (Math.random() * 90);
+            sifre += karakterler[sayi];
+        }
+        System.out.println("-----Lutfen Bekleyiniz-----");
+        for (int j = 3; j >= 1; j--) {
+            System.out.println("Sifreniz olusturuluyor...." + j);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
                 System.out.println(e);
             }
-		}
-		System.out.println("Olusturulan sifre = "+sifre);
-	}
+        }
+        System.out.println("Olusturulan sifre = " + sifre);
+    }
 }
