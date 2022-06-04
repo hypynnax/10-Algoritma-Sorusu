@@ -7,23 +7,26 @@ ekrana yazdıran programın akış şeması ve java kodu.
 **Java Kodu**
 
 package navigasyon;
+
 public class Navigasyon {
-    public static String maps(int [][] nav){
+
+    public static String maps(int[][] nav) {
         String yol = "";
         int satir = nav.length;
         int sutun = nav[0].length;
-        for (int i=0;i<satir;i++){
-            for (int j=0;j<sutun;j++){
-                if (nav[i][j] == 1){
-                    yol = yol + i + j +",";
+        for (int i = 0; i < satir; i++) {
+            for (int j = 0; j < sutun; j++) {
+                if (nav[i][j] == 1) {
+                    yol = yol + i + j + ",";
                 }
             }
         }
         return yol;
     }
+
     public static void main(String[] args) {
-        int [][] harita = {{1,1,0,0,0},{0,1,1,0,0},{0,0,1,1,0},{0,0,0,1,1}};
+        int[][] harita = {{1, 1, 0, 0, 0}, {0, 1, 1, 0, 0}, {0, 0, 1, 1, 0}, {0, 0, 0, 1, 1}};
         String sonuc = maps(harita);
         System.out.println(sonuc);
-    }    
+    }
 }
