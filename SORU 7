@@ -5,23 +5,26 @@ Kullanıcıdan alınan sayı ile 1 arasındaki asal sayıları ekrana yazdıran 
 **Java Kodu**
 
 package asalsayi;
+
 import java.util.Scanner;
+
 public class AsalSayi {
+
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("Lütfen pozitif bir tamsayı girin:");
         int sayi = reader.nextInt();
         boolean kontrol;
-        for (int i=2;i<=sayi;i++){
-            kontrol=false;
-            for (int j=2;j<i;j++){
-                if (i%j==0){
-                    kontrol=true;
+        for (int i = 2; i <= sayi; i++) {
+            kontrol = false;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    kontrol = true;
                     break;
                 }
             }
-            if (kontrol==false){
-                System.out.print(i+",");
+            if (kontrol == false) {
+                System.out.print(i + ",");
             }
         }
     }
